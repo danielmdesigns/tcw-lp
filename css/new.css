@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+ font-family: MyCustomFont;
+ src: url("../fonts/MTCORSVA.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: MyCustomFont;
+ src: url("../fonts/MTCORSVA.TTF") /* TTF file for CSS3 browsers */
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+}
+body{
+	background-image:url(../images/bg.png);
+}
+
+/* header & nav */
+header{
+	margin-top: 30px;
+	width: 100%
+}
+img#brand{
+	margin-top: 40px;
+	height: 123px;
+	display: block;
+	margin: auto;
+}
+#contact{
+	background-color:#c41230;
+	padding: 12px;
+	margin: 30px 0 10px 0;
+	text-align: center;
+	font-family: "Open-Sans", helvetica, arial, sans-serif;
+	font-size: 14px;
+}
+a:link{
+	color: #FFF;
+	text-decoration: none;
+	font-style:italic;
+}
+
+/* divider bar */
+#red-divider{
+	background-color:#c41230;
+	height: 2px;
+	width: 100%;
+}
+
+aside{
+	display: none;
+}
+
+/* promo banner */
+#promo-banner{
+	background-color: #a4b171;
+}
+#promo-banner > p {
+	font-family: MyCustomFont;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	font-weight:lighter;
+}
+
+.col-2{border:1px solid hotpink}
+
+/* main */
+main{
+	max-width: 1200px;
+	margin: 30px auto 30px auto;
+	color: #333;
+}
+h3{
+    color:#C41230;
+    font-family: "Open-Sans", helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+p{
+	font-family: "Open-Sans", helvetica, arial, sans-serif;
+	font-size: 14px;
+	padding-bottom: 10px;
+	line-height: 20px;
+}
+
+/* bulletin */
+#bulletin{
+	background-color:#c41230;
+	height: auto;
+	border:5px solid #992626;
+    outline: 10px solid #c41230;
+	color: #fff;
+	text-align: center;
+	word-wrap: break-word;
+}
+h4, h5{
+	font-family:MyCustomFont;
+	font-weight:lighter;
+	font-size: 5em;
+}
+h5 > small{
+	font-family:MyCustomFont;
+	font-weight:lighter;
+	font-size: .5em;
+}
+#bulletin > p{
+	font-color: #FFF;
+	font-family: "minion-pro", serif;
+	margin-top: 10px;
+}
+
+/* model */
+figure > img{
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: 34px;
+}
+
+/* footer */
+footer{
+	background-color:#c41230;
+	text-align: center;
+	color: #FFF;
+	margin-top: 30px;
+	padding: 20px;
+}
+footer > p {
+	display: inline-block;
+	font-size: 12px;
+	padding-right: 15px;
+}
+footer > img{
+	height: auto;
+	width: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* medium screens */
+@media(min-width: 481px){
+	#bulletin{
+		max-width: 350px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MqTracker */
+#mq-tracker {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  line-height: 40px;
+  padding-left: 20px;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: white;
+  opacity: 0.5;
+}
+
+@media(max-width: 480px) {
+  #mq-tracker {
+    background-color: red;
+  }
+  #mq-tracker:after {
+    content: "SMALL: 480px & less";
+  }
+}
+@media(min-width: 481px) {
+  #mq-tracker {
+    background-color: green;
+  }
+  #mq-tracker:after {
+    content: "MEDIUM: between 481px & 800px ";
+  }
+}
+@media(min-width: 801px) {
+  #mq-tracker {
+    background-color: blue;
+  }
+  #mq-tracker:after {
+    content: "LARGE: 801px & more";
+  }
+}

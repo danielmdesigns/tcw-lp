@@ -1,0 +1,214 @@
+/* custom css */
+.row {
+  width: 95%;
+  margin: 0px auto;
+}
+
+.box {
+  text-align: center;
+  background: #AFAFAF;
+  color: #FFF;
+  padding: 15px 0px 15px 0px;
+}
+
+/* DO NOT EDIT - grid styles */
+*,
+*:after,
+*:before {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 10px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 10px;
+  float: right;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.33%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-5 {
+  width: 20%;
+}
+
+.col-6 {
+  width: 16.6666666667%;
+}
+
+.col-7 {
+  width: 14.2857142857%;
+}
+
+.col-8 {
+  width: 12.5%;
+}
+
+.col-9 {
+  width: 11.1111111111%;
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-11 {
+  width: 9.09090909091%;
+}
+
+.col-12 {
+  width: 8.33%;
+}
+
+/* DO NOT EDIT - responsive grid */
+@media (max-width: 480px) {
+  .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-5 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .col-7 {
+    width: 100%;
+  }
+  .col-8 {
+    width: 100%;
+  }
+  .col-9 {
+    width: 100%;
+  }
+  .col-10 {
+    width: 100%;
+  }
+  .col-11 {
+    width: 100%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .row .col-4:nth-child(2) {
+    float: right;
+  }
+  .row .col-4:nth-child(3) {
+    clear: both;
+    float: left;
+  }
+  .row .col-4:nth-child(4) {
+    float: right;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .col-3 {
+    width: 33.33%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-8 {
+    width: 50%;
+  }
+  .col-5 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .col-7 {
+    width: 100%;
+  }
+  .col-8 {
+    width: 100%;
+  }
+  .col-9 {
+    width: 100%;
+  }
+  .col-10 {
+    width: 100%;
+  }
+  .col-11 {
+    width: 100%;
+  }
+  .col-12 {
+    width: 50%;
+  }
+}
+
+/* MqTracker */
+#mq-tracker {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  line-height: 40px;
+  padding-left: 20px;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: white;
+  opacity: 0.5;
+}
+
+@media(max-width: 480px) {
+  #mq-tracker {
+    background-color: red;
+  }
+  #mq-tracker:after {
+    content: "SMALL: 480px & less";
+  }
+}
+@media(min-width: 481px) {
+  #mq-tracker {
+    background-color: green;
+  }
+  #mq-tracker:after {
+    content: "MEDIUM: between 481px & 800px ";
+  }
+}
+@media(min-width: 801px) {
+  #mq-tracker {
+    background-color: blue;
+  }
+  #mq-tracker:after {
+    content: "LARGE: 801px & more";
+  }
+}

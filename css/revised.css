@@ -1,0 +1,597 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+/*-- Site Typography --*/
+@font-face {
+ font-family: MyCustomFont;
+ src: url("../fonts/MTCORSVA.eot") /* EOT file for IE */
+}
+
+@font-face {
+ font-family: MyCustomFont;
+ src: url("../fonts/MTCORSVA.TTF") /* TTF file for CSS3 browsers */
+}
+
+body{
+    background-image:url(../images/bg.png);
+}
+
+a img{
+    border: none;
+}
+
+/*-- Logo --*/
+
+#brand{
+    margin:20px 0px 0px 150px;
+    position: relative;
+    z-index: 1;
+	height: 123px;
+}
+
+/*-- Nav --*/
+nav{
+    height:40px;
+    width:100%;
+    background-color:#c41230;
+    text-align: right;
+    position: relative;
+    top:-108px;
+}
+
+/*-- contact --*/
+.contact{
+    height:40px;
+    margin:auto;
+	line-height: 40px;
+	font-size: 14px;
+	padding-right: 40px;
+}
+
+/*-- Header Contact Typography --*/
+/*span.number{
+    color:#FFF;
+    line-height:40px;
+    padding-right:150px;
+    font-family: "open-sans",sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+span.email{
+    color:#FFF;
+    line-height:40px;
+    padding-right:20px;
+    font-family: "open-sans",sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+}*/
+
+a:link{
+    color:#FFF;
+    text-decoration: none;
+    font-family: "open-sans",sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+a:hover{
+    color:#FFF;
+    text-decoration:none;
+    font-family: "open-sans",sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+a:visited{
+    color:#FFF;
+    text-decoration: none;
+    font-family: "open-sans",sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+a:active{
+    color:#FFF;
+    text-decoration:none;
+    font-family: "open-sans",sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/*-- Thin Top Slider Bar --*/
+
+.sliderBar{
+    height:2px;
+    width:auto;
+    margin: -25px 0 10px;
+    background-color:#c41230;
+}
+
+/*-- Slider Typography --*/
+
+.slideTitle{
+    position:absolute;
+    top: 80px;
+    left: 20px;
+    z-index:1;
+}
+
+.resortType{
+    color: #FFF;
+    font-family:MyCustomFont;
+    letter-spacing: 1px;
+    font-size: 5em;
+}
+
+.tagLine{
+    color:#FFF;
+    font-family: "minion-pro", serif;
+    font-size:1.5em;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left:150px;
+}
+
+/*-- Green Banner --*/
+
+.banner{
+    height:auto;
+    width:auto;
+    background-color:#a4b171;
+    margin: 15px 0 50px;
+    color:white;
+    text-align:center;
+    line-height: 40px;
+    padding: 20px;
+    font-size: 30px
+}
+
+.bannerType{
+    font-family:MyCustomFont;
+}
+
+/*-- Content Container --*/
+
+.content{
+    height:625px;
+    width:960px;
+    margin:auto;
+}
+
+/*-- Content --*/
+
+.heading{
+    color:#c41230;
+    font-family: "open-sans",sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.infoLeft{
+    width:50%;
+    font-family: "open-sans",sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    float: left;
+}
+
+p.bodyCopy{
+    padding-bottom: 20px;
+}
+
+.clickHere{
+    color:#737e49;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.clickHere:hover{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.clickHere:active{
+    color:#c41230;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.clickHere:visited{
+    text-decoration: none;
+    font-weight: 100;
+}
+
+
+/*-- Red Info Box --*/
+.infoRight{
+    height:410px;
+    width:378px;
+    padding-top: 15px;
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+}
+
+.opening{
+    height:auto;
+    width:385px;
+    background-color:#c41230;
+    border:5px solid #992626;
+    outline: 20px solid #c41230;
+    float: right;
+    text-align: center;
+    margin: auto;
+}
+
+p.openingText{
+    color:#FFF;
+    font-family:MyCustomFont;
+    text-align: center;
+}
+
+span.open{
+    font-size: 7em;
+    letter-spacing: 1px;
+}
+
+span.in{
+    font-size: 3em;
+    letter-spacing: 1px;
+    padding-right: 10px;
+}
+
+span.date{
+    font-size: 7em;
+    letter-spacing: 1px;
+}
+
+.flower{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+p.contactText{
+    color:#FFF;
+    font-family: "minion-pro", serif;
+    font-size: 20px;
+}
+
+p.elink{
+    padding-bottom: 10px;
+}
+
+a.elink:link{
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: "minion-pro", serif;
+    font-style: normal;
+    text-decoration:none;
+}
+
+/*-- Model Building --*/
+
+.model{
+    background: url(../images/model.png) center center no-repeat;
+    margin: 0 auto;
+    height: 173px;
+    width:auto;
+    display:block;
+    clear: both;
+}
+
+/*-- Footer --*/
+
+.footerIconEeo{
+    height:25px;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.footerIconsWheelchair{
+    height:25px;
+    line-height: 75px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+footer{
+    height: 75px;
+    width: auto;
+    background-color:#c41230;
+    line-height: 75px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: #FFF;
+    clear: both;
+    position: relative;
+}
+
+/*-- Media Queries --*/
+
+@media only screen and (max-width:1200px) {
+#brand{
+    margin:20px 0 0 150px;
+}
+
+.contact{
+    width: auto;
+}
+
+span.number{
+    padding-right:100px;
+}
+
+}
+
+@media only screen and (max-width:959px) {
+#brand{
+    margin:20px 0 0 20px;
+}
+
+/*-- Slider Typography --*/
+
+.slideTitle{
+    position:absolute;
+    top: 80px;
+    left: 20px;
+    z-index:1;
+}
+
+.resortType{
+    color: #FFF;
+    font-family:MyCustomFont;
+    letter-spacing: 1px;
+    font-size: 70px;
+}
+
+.tagLine{
+    color:#FFF;
+    font-family: "minion-pro", serif;
+    font-size:18px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left:50px;
+}
+
+span.number{
+    padding-right:20px;
+}
+
+.contentSlider{
+    width: auto;
+}
+
+.content{
+    width:80%;
+    height: auto;
+}
+
+.infoLeft{
+    float:none;
+    display: block;
+    margin: 0 auto 50px;
+    width: 85%;
+    height: auto;
+}
+
+.infoRight{
+    float: none;
+    height:550px;
+    margin:0 auto;
+    text-align: center;
+}
+
+}
+
+<!--Stacked Logo-->
+
+@media only screen and (max-width:767px) {
+
+#brand{
+    margin:20px auto;
+    display: block;
+}
+
+.headerBar{
+    text-align: center;
+    position: inherit;
+}
+
+/*-- Slider Typography --*/
+
+.slideTitle{
+    position:absolute;
+    top: 80px;
+    left: 20px;
+    z-index:1;
+}
+
+.resortType{
+    font-size: 20px;
+}
+
+.tagLine{
+    font-size: 14px;
+}
+
+
+footer{
+    height:auto;
+    padding:30px;
+    line-height: 10px;
+}
+
+}
+
+@media only screen and (max-width:700px){
+    .slideTitle{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:489px) {
+
+.logo{
+    margin:20px auto;
+    display: block;
+}
+
+.headerBar{
+    text-align: center;
+    position: inherit;
+    height: auto;
+}
+
+.display{
+    width: auto;
+    height: 300px;
+    background-color:#a4b171;
+    background: url(images/one_towneclub.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.infoLeft{
+
+}
+
+.infoRight{
+    width: auto;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+.opening{
+    width: 270px;
+    text-align: center;
+    margin: auto;
+    float: none;
+}
+
+span.open{
+    font-size: 5em;
+}
+
+span.in{
+    font-size: 2em;
+}
+
+span.date{
+    font-size: 5em;
+}
+
+.thumbs{
+    display:none;
+}
+
+.sliderBar{
+    margin:15px 0 10px;
+}
+
+.slideTitle{
+    display: none;
+}
+
+p.contactText{
+    color:#FFF;
+    font-family: "minion-pro", serif;
+    font-size: 16px;
+}
+
+p.elink{
+    padding-bottom: 10px;
+}
+
+a.elink:link{
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: "minion-pro", serif;
+    font-style: normal;
+    text-decoration:none;
+}
+
+footer{
+    height:auto;
+    padding:30px;
+    line-height: 30px;
+}
+
+}
+
+@media only screen and (max-width:320px){
+    .headerBar{
+        height: 90px;
+        line-height: 40px;
+    }
+
+    span.number{
+        color:#FFF;
+        font-family: "open-sans",sans-serif;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    span.email{
+        color:#FFF;
+        font-family: "open-sans",sans-serif;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+  .infoRight{
+      height:auto;
+      width:auto;
+  }
+
+  .opening{
+      height:auto;
+      width:180px;
+      background-color:#c41230;
+      text-align: center;
+      margin: auto;
+  }
+
+    span.open{
+        font-size: 50px;
+    }
+
+    span.in{
+        font-size: 45px;
+    }
+
+    span.date{
+        font-size: 45px;
+    }
+
+    p.contactText{
+        font-size:12px;
+    }
+
+    p.elink{
+
+    }
+
+    a.elink:link{
+        font-size: 10px;
+        font-family: "minion-pro", serif;
+        font-style: normal;
+        text-decoration:none;
+    }
+
+    .infoLeft{
+      line-height:18px;
+      text-align:center;     
+    }
+}
