@@ -35,7 +35,7 @@ img#brand{
 	font-family: "Open-Sans", helvetica, arial, sans-serif;
 	font-size: 14px;
 }
-a:link{
+a:link, a:hover, a:visited, a:active{
 	color: #FFF;
 	text-decoration: none;
 	font-style:italic;
@@ -49,7 +49,7 @@ a:link{
 }
 
 aside{
-	
+	display: none;
 }
 
 /* promo banner */
@@ -66,8 +66,6 @@ aside{
 	letter-spacing: 1px;
 	font-weight:lighter;
 }
-
-/*.col-2{border:1px solid hotpink}*/
 
 /* main */
 main{
@@ -87,8 +85,12 @@ h3{
 p{
 	font-family: "Open-Sans", helvetica, arial, sans-serif;
 	font-size: 14px;
-	padding-bottom: 10px;
 	line-height: 20px;
+}
+#link-faqs{
+	color: #C41230;
+	text-decoration: underline;
+	font-style:normal;
 }
 
 /* bulletin */
@@ -105,17 +107,31 @@ p{
 h4, h5{
 	font-family:MyCustomFont;
 	font-weight:lighter;
-	font-size: 5em;
+	font-size: 6.5em;
+	color: white;
 }
 h5 > small{
 	font-family:MyCustomFont;
 	font-weight:lighter;
 	font-size: .5em;
+	color: white;
 }
 #bulletin > p{
 	font-color: #FFF;
 	font-family: "minion-pro", serif;
-	margin-top: 10px;
+	font-size: 1em;
+	margin-top: 15px;
+	margin-bottom: 0;
+	font-weight: 600;
+}
+#bulletin > #link-email{
+	font-color: #FFF;
+	font-family: "minion-pro", serif;
+	font-size: 1.4em;
+	font-style:normal;
+	font-weight: 600;
+	margin-bottom: 15px;
+	display: block;
 }
 
 /* model */
@@ -123,7 +139,7 @@ figure > img{
 	width: 100%;
 	height: auto;
 	position: relative;
-	top: 34px;
+	top: 30px;
 }
 
 /* footer */
@@ -132,7 +148,7 @@ footer{
 	text-align: center;
 	color: #FFF;
 	margin-top: 30px;
-	padding: 20px;
+	padding: 15px;
 }
 footer > p {
 	display: inline-block;
@@ -157,8 +173,6 @@ footer > img{
 		margin-left: 20%;
 	}
 }
-<<<<<<< HEAD
-=======
 
 /* large screens */
 @media(min-width: 801px){
@@ -175,10 +189,6 @@ footer > img{
 		margin-top: 85px;
 	}
 }
-
-
-
->>>>>>> origin/large-header
 
 
 
