@@ -52,6 +52,10 @@ aside{
 	display: none;
 }
 
+#slider{
+	margin-top: 10px;
+}
+
 /* promo banner */
 #promo-banner{
 	background-color: #a4b171;
@@ -70,7 +74,7 @@ aside{
 /* main */
 main{
 	max-width: 1000px;
-	margin: 30px auto 30px auto;
+	margin: 0 auto 30px auto;
 	color: #333;
 	overflow:hidden;
 }
@@ -103,6 +107,7 @@ p{
 	text-align: center;
 	word-wrap: break-word;
 	overflow: hidden;
+	margin-top: 30px;
 }
 h4, h5{
 	font-family:MyCustomFont;
@@ -167,6 +172,31 @@ footer > img{
 	#bulletin{
 		max-width: 300px;
 	}
+	aside {
+	  display: block;
+	  width: 50%;
+	  position:absolute;
+	  top: 260px;
+	  left: 25px;
+	  white-space: nowrap;
+	  overflow:visible;
+	  z-index: 1;
+	}
+	h1{
+	  color: #FFF;
+	  font-family: MyCustomFont;
+	  font-size: 5em;
+	  font-weight: 500;
+	}
+	h2 > strong{
+	  color: #FFF;
+	  font-family: "minion-pro", serif;
+	  font-size:.7em;
+	  margin-top: -15px;
+	  display:block;
+	  position:absolute;
+	  left: 80px;
+	}
 }
 @media(min-width: 701px){
 	#bulletin{
@@ -187,6 +217,17 @@ footer > img{
 	}
 	#red-divider {
 		margin-top: 85px;
+	}
+	aside{
+		top: 200px;
+		left: 50px;
+	}
+	h1{
+		font-size: 6em;
+	}
+	h2 > strong{
+		left: 150px;
+		font-size: .75em;
 	}
 }
 
