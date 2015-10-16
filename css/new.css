@@ -35,7 +35,10 @@ img#brand{
 	font-family: "Open-Sans", helvetica, arial, sans-serif;
 	font-size: 14px;
 }
-a:link, a:hover, a:visited, a:active{
+a:link,
+a:hover,
+a:visited,
+a:active{
 	color: #FFF;
 	text-decoration: none;
 	font-style:italic;
@@ -47,18 +50,25 @@ a:link, a:hover, a:visited, a:active{
 	height: 2px;
 	width: 100%;
 }
-
 aside{
 	display: none;
 }
-
 #slider{
-	margin-top: 10px;
+	margin-top: 5px;
+}
+a.bx-prev, a.bx-next{
+	display: none;
+}
+.bx-pager{
+	position:relative;
+	right: 50px;
+	top: 35px;
 }
 
 /* promo banner */
 #promo-banner{
 	background-color: #a4b171;
+	margin-bottom: 30px;
 }
 #promo-banner > p {
 	font-family: MyCustomFont;
@@ -100,51 +110,48 @@ p{
 /* bulletin */
 #bulletin{
 	background-color:#c41230;
+	max-width: 350px;
 	height: auto;
 	border:5px solid #992626;
-    outline: 10px solid #c41230;
+    outline: 10px solid #c41230; 
 	color: #fff;
 	text-align: center;
-	word-wrap: break-word;
-	overflow: hidden;
-	margin-top: 30px;
 }
 h4, h5{
-	font-family:MyCustomFont;
-	font-weight:lighter;
-	font-size: 6.5em;
-	color: white;
+	font-size: 3em;
+	font-family: MyCustomFont;
+	text-align: center;
+	font-weight: normal;
 }
-h5 > small{
-	font-family:MyCustomFont;
-	font-weight:lighter;
-	font-size: .5em;
-	color: white;
+img#flower {
+	margin-bottom: 15px;
+}
+h5 > small {
+	font-size: 0.7em;
+	font-family: MyCustomFont;
 }
 #bulletin > p{
-	font-color: #FFF;
-	font-family: "minion-pro", serif;
-	font-size: 1em;
-	margin-top: 15px;
-	margin-bottom: 0;
-	font-weight: 600;
+	font-family: 'Crimson Text', serif;
+	font-weight:700;
+	font-size: .6em;
 }
-#bulletin > #link-email{
-	font-color: #FFF;
-	font-family: "minion-pro", serif;
-	font-size: 1.4em;
+#bulletin > a{
+	font-family: 'Crimson Text', serif;
+	text-transform:uppercase;
+	font-weight:700;
+	font-size: 0.7em;
 	font-style:normal;
-	font-weight: 600;
-	margin-bottom: 15px;
-	display: block;
+	display:block;
+	margin-bottom: 10px;
 }
+
 
 /* model */
 figure > img{
 	width: 100%;
 	height: auto;
 	position: relative;
-	top: 30px;
+	top: 34px;
 }
 
 /* footer */
@@ -167,11 +174,23 @@ footer > img{
 	vertical-align: middle;
 }
 
+
+
+/* small screens */
+@media (max-width: 480px){
+	#bulletin{
+		margin-top: 30px;
+	}
+	.bx-pager{
+		display: none;
+	}
+	.bx-wrapper {
+		margin-bottom: 15px;
+	}
+}
+
 /* medium screens */
 @media(min-width: 481px){
-	#bulletin{
-		max-width: 300px;
-	}
 	aside {
 	  display: block;
 	  width: 50%;
@@ -188,17 +207,15 @@ footer > img{
 	  font-size: 5em;
 	  font-weight: 500;
 	}
-	h2 > strong{
+	h2{
 	  color: #FFF;
-	  font-family: "minion-pro", serif;
-	  font-size:.7em;
-	  margin-top: -15px;
+	  font-family: 'Crimson Text', serif;
+	  font-size: 1.3em;
+	  font-weight: 700;
 	  display:block;
 	  position:absolute;
-	  left: 80px;
+	  left: 100px;
 	}
-}
-@media(min-width: 701px){
 	#bulletin{
 		margin-left: 20%;
 	}
@@ -215,7 +232,7 @@ footer > img{
 		top: 10px;
 		left: 10%;
 	}
-	#red-divider {
+	#red-divider{
 		margin-top: 85px;
 	}
 	aside{
@@ -225,22 +242,11 @@ footer > img{
 	h1{
 		font-size: 6em;
 	}
-	h2 > strong{
-		left: 150px;
-		font-size: .75em;
+	h2{
+		left: 175px;
+		font-size: 2em;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
