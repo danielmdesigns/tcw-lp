@@ -101,6 +101,9 @@ p{
 	font-size: 14px;
 	line-height: 20px;
 }
+#desc > p{
+	margin-bottom: 20px;
+}
 #link-faqs{
 	color: #C41230;
 	text-decoration: underline;
