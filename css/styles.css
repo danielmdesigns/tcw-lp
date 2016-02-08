@@ -13,7 +13,7 @@ html, html a {
     -webkit-font-smoothing: antialiased !important;
 }
 body{
-	background-image:url(../images/bg.png);
+	background-image:url(../images/bg2x.png);
 }
 
 /* header & nav */
@@ -130,6 +130,7 @@ h4, h5{
 }
 img#flower {
 	margin-bottom: 15px;
+	max-width: 100%;
 }
 h5 > small {
 	font-size: 0.7em;
@@ -181,7 +182,7 @@ footer > img{
 /* small screens */
 @media (max-width: 480px){
 	#bulletin{
-		margin-top: 30px;
+		margin: 30px auto 0 auto;
 	}
 	.bx-pager{
 		display: none;
